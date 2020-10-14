@@ -1,16 +1,16 @@
-#### cmhui-portfolio-react
+## cmhui-portfolio-react
 React로 만든 개인 portfolio 사이트
 
-## SETTING
+#### SETTING
 > npx create-react-app
 
-## SKILL
+#### SKILL
 - React
 - JSX
 - Javascript (ES6)
 - SCSS
 - styled component
 
-## CROSS BROWSING
+#### CROSS BROWSING
 - IE 10+
 - RESPONSIVE
