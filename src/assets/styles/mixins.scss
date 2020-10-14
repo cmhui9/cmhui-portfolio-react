@@ -1,0 +1,38 @@
+@mixin box_border_radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius:    $radius;
+    -ms-border-radius:     $radius;
+    border-radius:         $radius;
+}
+
+@mixin image_background($url) {
+    background: url($url) center center no-repeat;
+    background-size: 100% auto;
+}
+
+@mixin position_background($url, $x, $y) {
+    background: url($url) $x $y no-repeat;
+    background-size: 100% auto;
+}
+
+
+@mixin single_transition($property, $duration) {
+    -webkit-transition: $property $duration;
+       -moz-transition: $property $duration;
+         -o-transition: $property $duration;
+            transition: $property $duration;
+}
+
+
+@mixin double_transition($property1, $duration1, $property2, $duration2) {
+    -webkit-transition: $property1 $duration1, $property2 $duration2;
+       -moz-transition: $property1 $duration1, $property2 $duration2;
+         -o-transition: $property1 $duration1, $property2 $duration2;
+            transition: $property1 $duration1, $property2 $duration2;
+}
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint_mobile}) {
+        @content;
+    }
+}
